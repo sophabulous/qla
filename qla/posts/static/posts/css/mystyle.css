@@ -1,0 +1,1153 @@
+/*
+html{
+  height: 100%;
+    box-sizing: border-box;
+}
+
+.container {
+
+}
+
+body {
+    padding:0;
+  position: relative;
+  margin: 0;
+  min-height: 100%;
+}
+*/
+
+/* line 70, style.scss */
+.img-container {
+  overflow: hidden;
+  display: block;
+  margin: 0;
+}
+/* line 75, style.scss */
+.img-container img {
+  width: 100%;
+  margin: 0;
+}
+
+.standardrow{
+    padding: 15px;
+}
+/* line 94, style.scss */
+.molecules-picture-with-caption {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+/* line 101, style.scss */
+.molecules-picture-with-caption .caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 66%;
+  overflow: auto;
+  padding: 0;
+  max-height: 100%;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+/* line 114, style.scss */
+.molecules-picture-with-caption .caption .media {
+  position: relative;
+  margin: 0;
+  padding: 10px 15px;
+}
+/* line 119, style.scss */
+.molecules-picture-with-caption .caption .media .atoms-subtitle, .molecules-picture-with-caption .caption .media p {
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+
+/* line 64, style.scss */
+.thumbnail {
+  border-radius: 0 !important;
+  box-shadow: none;
+}
+
+#makeMeScrollable{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    padding: 0;
+}
+
+#makeMeScrollable div.scrollableArea img{
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+    /* If you don't want the images in the scroller to be selectable, try the following
+       block of code. It's just a nice feature that prevent the images from
+       accidentally becoming selected/inverted when the user interacts with the scroller. */
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+#hp-header{
+    display: inline-block;
+    text-align: center;
+    width: 80%;
+    height: 80%;
+}
+
+.section-header{
+    margin-top: 30px;
+    font-size:4em;
+    font-family: YeahPapa;
+    color: white;
+    text-decoration: underline;
+}
+
+.section-header a:link {
+    color: white; 
+    font-size:1.2em;
+    text-decoration: underline; 
+}
+.section-header a:visited {
+    text-decoration: none;
+}
+
+.section-header a:hover {
+    color: gainsboro;
+    text-decoration: none;
+}
+
+.section-header a:active {
+    text-decoration: none;
+}
+
+/*------------------------------------*\
+    $Navigation Bar
+\*------------------------------------*/
+/*
+.menu-wrap {
+    position:relative;
+    z-index:10000;
+}
+*/
+
+nav li{
+    list-style: none;
+    position:relative;
+}
+
+nav ul ul{
+    top: 30px;
+    left: -20px;
+    position: absolute;
+    display: inline-block;
+    z-index: 999999;
+    visibility: hidden;
+}
+
+nav ul li:hover ul{
+    width: 180px;
+    background-color: rgba(0,0,0,0.70);
+    visibility: visible;
+    position: absolute;
+
+}
+
+nav ul li:hover ul > li a {
+    line-height: 0.5em;
+    display: block;
+}
+
+
+
+/*------------------------------------*\
+    $Gallery
+\*------------------------------------*/
+
+#gallery{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/*------------------------------------*\
+    $Top Picture
+\*------------------------------------*/
+
+#top-caption-headline{
+    height: 40%
+}
+
+#top-headline{
+    height: 60%;
+}
+
+.top-picture img{
+    display: block;
+    max-width:600px;
+    max-height:250px;
+    width: auto;
+    height: auto;
+}
+.top-picture h2{
+    margin-top: 0px;
+    font-size:3em;
+    left:10px;
+    font-family: Peignot;
+/*
+    position:absolute;
+    right:10px;
+    bottom:50px;
+    left:10px;
+*/
+    text-align:left;
+    color:yellow;
+}
+
+.top-picture h4{
+    font-size:1.5em;
+    left:10px;
+    font-family: Adobe Caslon Pro;
+/*
+    position:absolute;
+    bottom:30px;
+    left:10px;
+*/
+    text-align:left;
+    color:#fff;
+}
+
+.top-picture h6{
+    font-size:1em;
+    left:10px;
+    right:10px;
+    font-family: ABLAX;
+/*
+    position:absolute;
+    right:10px;
+    bottom:10px;
+    left:10px;
+*/
+    text-align:left;
+    color:dodgerblue;
+/*    background-color:rgba(0,0,0,0.75);*/
+}
+
+/*------------------------------------*\
+    $Latest Post
+\*------------------------------------*/
+
+
+.latestpost a:link {
+    text-decoration: none;
+}
+
+.latestpost a:visited {
+    text-decoration: none;
+}
+
+.latestpost a:hover {
+    text-decoration: none;
+}
+
+.latestpost a:active {
+    text-decoration: none;
+}
+.latestpost h2{
+    margin-top: 0px;
+    font-size:2em;
+    left:10px;
+    font-family: Peignot;
+/*
+    position:absolute;
+    right:10px;
+    bottom:50px;
+    left:10px;
+*/
+    text-align:left;
+    color:yellow;
+}
+
+.latestpost h5{
+    font-size:1em;
+    left:10px;
+    font-family: Adobe Caslon Pro;
+/*
+    position:absolute;
+    bottom:30px;
+    left:10px;
+*/
+    text-align:left;
+    color:#fff;
+}
+
+.latestpost h6{
+    font-size:1em;
+    left:10px;
+    right:10px;
+    font-family: ABLAX;
+/*
+    position:absolute;
+    right:10px;
+    bottom:10px;
+    left:10px;
+*/
+    text-align:left;
+    color:dodgerblue;
+/*    background-color:rgba(0,0,0,0.75);*/
+}
+
+/*------------------------------------*\
+    $Bio
+\*------------------------------------*/
+.bio-related{
+    margin-left: -25px;
+    margin-right: -25px;
+    margin-bottom: 30px;
+    
+}
+/*------------------------------------*\
+    $Contributor
+\*------------------------------------*/
+
+.contributor img{
+    margin-bottom: 2em;
+}
+
+.contributor a:link {
+    color: dodgerblue; 
+    text-decoration: none;
+}
+
+.contributor a:visited {
+    text-decoration: none;
+}
+
+.contributor a:hover {
+    text-decoration: none;
+}
+
+.contributor a:active {
+    text-decoration: none;
+}
+
+.contributor h2{
+    margin-top: 0px;
+    font-size:4em;
+    left:10px;
+    font-family: NotepaperAirplanes;
+/*
+    position:absolute;
+    right:10px;
+    bottom:50px;
+    left:10px;
+*/
+    text-align:left;
+    line-height: 30px;
+    color:dodgerblue;
+}
+
+.contributor h4{
+    font-size:1em;
+    left:10px;
+    font-family: Adobe Caslon Pro;
+/*
+    position:absolute;
+    bottom:30px;
+    left:10px;
+*/
+    text-align:left;
+    color:#fff;
+}
+
+.contributor h5{
+    font-size:1em;
+    left:10px;
+    right:10px;
+    font-family: ABLAX;
+/*
+    position:absolute;
+    right:10px;
+    bottom:10px;
+    left:10px;
+*/
+    text-align:left;
+    color:white;
+/*    background-color:rgba(0,0,0,0.75);*/
+}
+.all-contributors{
+    padding-left: 75px;
+    padding-right: 100px;
+    margin-top: 20px;
+}
+
+.contributor-join {
+    margin-left: 60px;
+    margin-bottom: 50px;
+      display: inline-block;
+      -webkit-box-sizing: content-box;
+      -moz-box-sizing: content-box;
+      box-sizing: content-box;
+      position: relative;
+      cursor: pointer;
+      bottom: 0;
+      padding: 0 22px;
+      border: 4px solid rgb(255,255,255);
+      font: normal normal bold 20px/50px Arial, Helvetica, sans-serif;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      text-transform: uppercase;
+      -o-text-overflow: clip;
+      text-overflow: clip;
+}
+
+.contributor-join:hover {
+  color: #383535;
+  background: #ffffff;
+    text-decoration: none;
+}
+
+#right-sidebar{
+    padding-left: 20px;
+}
+
+#QLAOTD{
+    width: 80%;
+}
+
+.bg{
+/*    background-color: #F5F2ED;*/
+/*    background-color: antiquewhite;*/
+    background-image: url("../images/smoke.jpg");
+}
+
+.layer {
+
+    background-color: rgba(0, 0, 0, 0.75);
+    font-weight: bold;
+}
+
+.articlelayer {
+
+    background-color: rgba(225, 225, 225, 0.95);
+    font-weight: bold;
+}
+
+.headersubhead{
+    font-family: "Caslon";
+    font-weight: bold;
+    font-style: oblique;
+    color: white;
+}
+
+/*20% column width*/
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.col-xs-15 {
+    width: 20%;
+    float: left;
+}
+@media (min-width: 768px) {
+.col-sm-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-15 {
+        width: 20%;
+        float: left;
+    }
+}
+
+#headerfont{
+/*    font-family: IntriqueScript;*/
+    font-family: Jayadhira;
+    font-size: 60px;
+    color: white;
+}
+
+/*------------------------------------*\
+    $QLA
+\*------------------------------------*/
+
+.QLAOTD h2{
+    font-family: Adobe Caslon Pro;
+}
+
+.navigation{
+    padding-left: 70px;
+    padding-right: 100px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+.navigation a:link{
+    color: white;
+    font-size: 40px;
+    font-family: Arial; 
+    text-decoration: none;
+}
+
+.navigation a:hover{
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+.last-arrow{
+    text-align: right;
+    float: right;
+}
+.next-arrow{
+    text-align: left;
+}
+.submittext{
+    font-size: 8em;
+    font-family: NotepaperAirplanes;
+    text-align: center;
+    line-height: 55px;
+}
+
+.submittext a:link {
+    color: yellow; 
+    text-decoration: none; 
+}
+.submittext a:visited {
+    text-decoration: none;
+}
+
+.submittext a:hover {
+    color: yellow;
+    text-decoration: none;
+}
+
+.submittext a:active {
+    text-decoration: none;
+}
+
+.grow { 
+    transition: all .2s ease-in-out; 
+}
+.grow:hover {
+    transform: scale(1.1); 
+      cursor: pointer;
+      border: none;
+      color: rgba(0, 0, 0, 0);
+      text-shadow: 3px 0 0 rgb(217,31,38) , 6px 0 0 rgb(226,91,14) , 9px 0 0 rgb(245,221,8) , 12px 0 0 rgb(5,148,68) , 15px 0 0 rgb(2,135,206) , 18px 0 0 rgb(4,77,145) , 21px 0 0 rgb(42,21,113) ;
+}
+
+.single-QLA-DAA{
+    color: dodgerblue;
+}
+.single-QLA-text{
+    font-weight: 400;
+}
+
+.form-labels{
+    color: white;
+}
+.submit-title{
+    color: yellow;
+}
+
+.rules{
+    margin-top: 30px;
+    font-weight: normal;
+    color: white;
+}
+
+.submit-button{
+    color: white;
+    cursor: pointer;
+    bottom: 0;
+    padding: 0 22px;
+    border: 4px solid rgb(255,255,255);
+    font: normal normal bold 20px/50px Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-transform: uppercase;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+/*
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+*/
+     width: 20%;
+}
+
+.submit-button:hover {
+  color: #383535;
+  background: #ffffff;
+    text-decoration: none;
+}
+/*------------------------------------*\
+    $CAROUSEL
+\*------------------------------------*/
+.carousel{
+    overflow:hidden;
+    width:100%;
+    position: center;
+}
+.panes{
+    list-style:none;
+    position:relative;
+    width:500%; /* Number of panes * 100% */
+    overflow:hidden; /* This is used solely to clear floats, it does not add functionality. */
+        
+    -moz-animation:carousel 40s infinite;
+    -webkit-animation:carousel 40s infinite;
+    animation:carousel 40s infinite;
+}
+.panes > li{
+    position:relative;
+    float:left;
+    width:20%; /* 100 / number of panes */
+}
+.carousel img{
+    display:block;
+    width:100%;
+    max-width:100%;
+}
+.carousel h2 a{
+    margin-top: 0px;
+    font-size:2.25em;
+    left:10px;
+    font-family: Peignot;
+/*
+    position:absolute;
+    right:10px;
+    bottom:50px;
+    left:10px;
+*/
+    text-align:left;
+    color:yellow;
+}
+
+.carousel h4{
+    font-size:2em;
+    left:10px;
+    font-family: Adobe Caslon Pro;
+/*
+    position:absolute;
+    bottom:30px;
+    left:10px;
+*/
+    text-align:left;
+    color:#fff;
+/*    background-color:rgba(0,0,0,0.75);*/
+}
+
+.carousel h6{
+    font-size:2em;
+    left:10px;
+    right:10px;
+    font-family: ABLAX;
+    text-align:left;
+    color:dodgerblue;
+}
+
+.carousel h6 a{
+/*    font-size:2em;*/
+    left:10px;
+    right:10px;
+    font-family: ABLAX;
+/*
+    position:absolute;
+    right:10px;
+    bottom:10px;
+    left:10px;
+*/
+    text-align:left;
+    color:dodgerblue;
+/*    background-color:rgba(0,0,0,0.75);*/
+}
+
+#carousel-img{
+    position:relative;
+    width: 66.66%;
+    height: 0;
+    padding-bottom: 40% ; /* % of width, defines aspect ratio*/
+    
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;  
+}
+
+@keyframes carousel{
+    0%    { left:0; }
+    11%   { left:0; }
+    12.5% { left:-100%; }
+    23.5% { left:-100%; }
+    25%   { left:-200%; }
+    36%   { left:-200%; }
+    37.5% { left:-300%; }
+    48.5% { left:-300%; }
+    50%   { left:-400%; }
+    61%   { left:-400%; }
+    62.5% { left:-300%; }
+    73.5% { left:-300%; }
+    75%   { left:-200%; }
+    86%   { left:-200%; }
+    87.5% { left:-100%; }
+    98.5% { left:-100%; }
+    100%  { left:0; }
+}
+
+/*------------------------------------*\
+    $footer
+\*------------------------------------*/
+
+
+
+#footer-logo{
+    padding: 30px;
+    padding-left: 0px;
+    font-family: Jayadhira;
+    font-size: 40px;
+    color: white;
+}
+
+.footer-text{
+    font-family: "Helvetica";
+    font-size: 13px;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    float: left;
+}
+
+.footer a:link {
+    color: white; 
+    text-decoration: none; 
+}
+
+.footer a:visited {
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+.footer a:active {
+    text-decoration: none;
+}
+#newsletter{
+    padding-top: 50px;
+    margin-bottom: 20px;
+}
+
+.signup{
+    display: block;
+    width: 100%;
+    padding: 0;
+    padding-top: 0;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 19px;
+    line-height: inherit;
+    color: white;
+}
+
+.credits {
+    font-size: 12px;
+    color: darkgrey;
+    float: right; 
+}
+
+#fineprint{
+    background-color: black;
+    clear: both;
+    overflow: hidden;
+    padding-top: 10px;
+}
+
+.fixedTop {
+    position: fixed;
+    width: 100%;
+    left: 0;
+/*
+    left: 0;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
+*/
+/*    margin: 0 auto;*/
+    top: 0px;
+    background-color: black;
+    z-index: 100;
+}
+
+.nav-placeholder{
+    margin: 0 0px 10px 0;
+}
+
+.fixedTop .nav-inner{
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+/*------------------------------------*\
+    $article
+\*------------------------------------*/
+
+
+.article-nav{
+/*
+    width: 100%;
+    position: fixed;
+    left: 0;
+*/
+    position: fixed;
+    width: 100%;
+    left: 0;
+   padding-top: 10px;
+    margin-bottom: 10px;
+    background-color: black;
+    z-index: 100;
+}
+
+.article-div{
+    margin-top: 70px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.article-text{
+    margin-right: 40px;
+}
+
+.article-title{
+/*    margin-top: 0px;*/
+    font-size: 4em;
+    left:10px;
+    font-family: Peignot;
+    text-align:left;
+    color:black;
+}
+.article-body{
+    font-size:17px;
+    left:10px;
+    font-family: Adobe Caslon Pro;
+    text-align:left;
+    //color:#2B292B;
+    color: black;
+    font-weight: normal;
+    line-height: 30px;
+}
+.article-author{
+    font-size:2em;
+    left:10px;
+    margin-left: 10px;
+    right:10px;
+    font-family: ABLAX;
+    text-align:left;
+    color:dodgerblue;
+}
+
+.article-date{
+    font-family: Quizma;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*------------------------------------*\
+    $Popular Posts
+\*------------------------------------*/
+
+.popular-post-div{
+
+}
+
+
+.popular-header{
+    margin-top: 30px;
+    font-size:40px;
+    font-family: YeahPapa;
+    color: black;
+    text-decoration: underline;
+}
+
+.popular-headline a{
+    font-size: 25px;
+    left:10px;
+    font-family: Peignot;
+    text-align:left;
+    color:dimgrey;
+}
+
+.popular-author a{
+    font-size:20px;
+    left:10px;
+    right:10px;
+    font-family: ABLAX;
+    text-align:left;
+    color:dodgerblue;
+}
+
+
+/*------------------------------------*\
+    $Weekly Vignette
+\*------------------------------------*/
+.wv{
+    
+}
+.wv h1{
+    margin-left: 10px;
+    margin-top: 30px;
+    font-size:80px;
+    font-family: YeahPapa;
+    color: deeppink;
+}
+
+
+/*------------------------------------*\
+    $Category
+\*------------------------------------*/
+.category{
+    padding-left: 50px;
+    padding-right: 100px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+.category h1{
+    margin-left: 10px;
+    margin-top: 30px;
+    font-size:80px;
+    font-family: YeahPapa;
+    color:yellow;
+}
+
+.category a:link {
+    color: dodgerblue; 
+    text-decoration: none; 
+}
+.category a:visited {
+    text-decoration: none;
+}
+
+.category a:hover {
+    text-decoration: none;
+}
+
+.category a:active {
+    text-decoration: none;
+}
+/*------------------------------------*\
+    $About
+\*------------------------------------*/
+
+.about{
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.abouthr{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.about h1{
+    margin-left: 10px;
+    margin-top: 30px;
+    font-size:80px;
+    font-family: YeahPapa;
+    color: deeppink;
+}
+.about-text{
+    font-family: Adobe Caslon Pro;
+    color:white;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 30px;
+}
+
+.about ul li a{
+    font-size:30px;
+    left:10px;
+    right:10px;
+    font-family: ABLAX;
+    text-align:left;
+    color:white;
+}
+
+.about ul li em{
+    font-size: 15px;
+    color: dodgerblue;
+}
+
+/*------------------------------------*\
+    $Contact
+\*------------------------------------*/
+
+.contact{
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+.contact h1{
+    margin-left: 10px;
+    margin-top: 30px;
+    font-size:80px;
+    font-family: YeahPapa;
+    color: yellow;
+}
+.contact p{
+    margin-top: 30px;
+    font-family: Adobe Caslon Pro;
+    color:white;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+
+/*------------------------------------*\
+    $Social Media Icons
+\*------------------------------------*/
+
+ul.share-buttons{
+  list-style: none;
+  padding: 0;
+}
+
+ul.share-buttons li{
+  display: inline;
+}
+/*------------------------------------*\
+    $Fonts
+\*------------------------------------*/
+
+@font-face { 
+    font-family: ABLAX; 
+    src: url('fonts/ABLAX.ttf'); 
+} 
+
+@font-face { 
+    font-family: nationalcartoon; 
+    src: url('fonts/National Cartoon.ttf'); 
+} 
+
+@font-face { 
+    font-family: YeahPapa; 
+    src: url('fonts/YeahPapa.ttf'); 
+} 
+
+@font-face { 
+    font-family: Lombok; 
+    src: url('fonts/Lombok.otf'); 
+} 
+
+@font-face { 
+    font-family: Peignot; 
+    src: url('fonts/Peignot.ttf'); 
+}
+
+@font-face { 
+    font-family: florcn; 
+    src: url('fonts/florcn.ttf'); 
+}
+
+@font-face { 
+    font-family: speedball; 
+    src: url('fonts/Speedball.ttf'); 
+}
+
+@font-face { 
+    font-family: DK-high-tea; 
+    src: url('fonts/DK High Tea.otf'); 
+}
+
+@font-face { 
+    font-family: Jayadhira; 
+    src: url('fonts/Jayadhira.ttf'); 
+} 
+
+@font-face { 
+    font-family: IntriqueScript; 
+    src: url('fonts/IntriqueScript.ttf'); 
+} 
+
+@font-face { 
+    font-family: GubbenIL; 
+    src: url('fonts/GubbenIL.ttf'); 
+} 
+
+@font-face { 
+    font-family: BADABB; 
+    src:url('fonts/BADABB.ttf'); 
+} 
+
+@font-face { 
+    font-family: NotepaperAirplanes; 
+    src: url('fonts/Notepaper Airplanes.ttf'); 
+} 
+
+@font-face { 
+    font-family: BeachMan; 
+    src: url('fonts/BeachmanScript.ttf'); 
+} 
+
+@font-face { 
+    font-family: GubbenIL; 
+    font-weight: bold; 
+    src: url('fonts/GubbenIL.ttf');
+}
+
+@font-face { 
+    font-family: Adobe Caslon Pro; 
+    src: url('fonts/Adobe Caslon Pro.ttf'); 
+} 
+
+@font-face { 
+    font-family: Streamster; 
+    src: url('fonts/Streamster.ttf'); 
+} 
+
+@font-face { 
+    font-family: Caslon; 
+    src: url('fonts/CaslonRoman.ttf'); 
+} 
+@font-face { 
+    font-family: CaslonBold; 
+    src: url('fonts/CaslonBold.ttf');
+}
+
+@font-face { 
+    font-family: CaslonItalic; 
+    src: url('fonts/CaslonItalic.ttf'); 
+} 
+
+@font-face { 
+    font-family: EarlyTimes; 
+    src: url('fonts/Early Times_regular.otf'); 
+} 
+
+@font-face { 
+    font-family: Quizma; 
+    src: url('fonts/Quizma_Light.otf'); 
+} 
